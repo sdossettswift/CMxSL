@@ -1,0 +1,27 @@
+@import 'bootstrap-sprockets';
+@import 'bootstrap';
+@import 'bootstrap-material-design';
+@import "font-awesome-sprockets";
+@import "font-awesome";
+* {
+    font-family: 'Avenir', sans-serif;
+}
+h1 {
+    text-align: center;
+}
+
+
+.icon-div{
+  height: 50px;
+  width:  50px;
+  padding: 10px;
+  border-radius: 50px;
+  background-color: #c51162;
+  position: absolute;
+  top: -25px;
+  left: 40%;
+  i{
+    color: white;
+    font-size: 30px;
+  }
+}
