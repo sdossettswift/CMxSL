@@ -23,6 +23,7 @@ gem 'materialize-sass'
 gem 'wicked_pdf'
 gem 'wkhtmltopdf-binary'
 gem 'gravtastic'
+gem 'rails-erd' #entity relationship diagrams
 
 
 
