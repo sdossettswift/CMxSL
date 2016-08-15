@@ -1,0 +1,27 @@
+<div class="outer-wrapper">
+  <div class="card">
+    <div class="container">
+        <h1>Users</h1>
+          <table class="table">
+              <thead>
+                  <tr>
+                      <th>User ID</th>
+                      <th>Username</th>
+                      <th>Email</th>
+                      <th>Link</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td> <%=@user.id%></td>
+                      <td> <%=@user.username%>  </td>
+                      <td> <%=@user.email%>  </td>
+                      <td> <%=link_to 'More Info', user_path(id: @user.id)%> </td>
+                  </tr>
+                  <%end%>
+              </tr>
+          </tbody>
+      </table>
+    </div>
+  </div>
+</div>
