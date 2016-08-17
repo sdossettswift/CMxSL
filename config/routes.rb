@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+
+
     resources :lists
     resources :contacts
     resources :users
@@ -14,5 +16,5 @@ Rails.application.routes.draw do
     delete 'sign_in' => 'sessions#delete', as: :end_session
     get 'sign_out' => 'sessions#delete', as: :sign_out
 
-    root 'dashboard#welcome'
+    root 'welcome#hello'
 end
