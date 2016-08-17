@@ -1,4 +1,10 @@
 class GroupsController < ApplicationController
+  before_action do
+    if @current_user.nil?
+      redirect_to sign_in_path, alert: "Please Sign In"
+    end
+  end
+
   def new
       @group = Group.new
     end
