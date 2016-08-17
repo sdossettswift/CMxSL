@@ -7,13 +7,10 @@ gem 'puma', '~> 3.0'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.2'
-# gem 'therubyracer', platforms: :ruby
-
 gem 'jquery-rails'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'bcrypt', '~> 3.1.7'
-
 gem 'bootstrap-sass'
 gem 'bootstrap-material-design', '~> 0.2.2'
 gem 'minitest-rails'
@@ -24,12 +21,8 @@ gem 'wicked_pdf'
 gem 'wkhtmltopdf-binary'
 gem 'gravtastic'
 gem 'rails-erd' #entity relationship diagrams
+gem 'rails_12factor' #for heroku
 
-
-
-group :production do
-  gem 'rails_12factor' #for heroku
-end
 
 group :test do
   gem 'minitest-rails-capybara'
