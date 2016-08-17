@@ -48,7 +48,7 @@ def update
   before_action do
     if @current_user.nil?
       redirect_to sign_in_path, alert: "Please Sign In"
-    end
+    else
   end
   @user = User.find_by id: params[:id]
     if @user.update(user_params)
