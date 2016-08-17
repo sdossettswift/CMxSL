@@ -42,7 +42,7 @@ class GroupsController < ApplicationController
     private
 
     def group_params
-      params.require(:group).permit()
+      params.require(:group).permit(:group_name, :sector, :description, :status, :contact_name, :contact_phone, :contact_email)
     end
 
   end
