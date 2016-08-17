@@ -8,8 +8,8 @@ class UsersController < ApplicationController
     before_action do
       if @current_user.nil?
         redirect_to sign_in_path, alert: "Please Sign In"
+      else
       end
-    end
     @users = User.all
   end
 
@@ -18,8 +18,8 @@ class UsersController < ApplicationController
     before_action do
       if @current_user.nil?
         redirect_to sign_in_path, alert: "Please Sign In"
+      else
       end
-    end
     @user = User.find_by id: params[:id]
   end
 
@@ -27,8 +27,8 @@ class UsersController < ApplicationController
     before_action do
       if @current_user.nil?
         redirect_to sign_in_path, alert: "Please Sign In"
+      else
       end
-    end
     @user = User.find_by id: params[:id]
   end
 
