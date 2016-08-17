@@ -1,0 +1,32 @@
+<div class="outer-wrapper">
+  <div class="card">
+    <div class="container">
+        <h1>Contacts</h1>
+          <table class="table">
+              <thead>
+                  <tr>
+                      <th>List ID</th>
+                      <th>List Name</th>
+                      <th>Description</th>
+                      <th>Category</th>
+                      <th>Phone</th>
+                      <th>Status</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <% @lists.each do |list|%>
+                  <tr>
+                      <td> <%=list.id%></td>
+                      <td> <%=list.list_name%>  </td>
+                      <td> <%=list.description%>  </td>
+                      <td> <%=list.category%>  </td>
+                      <td> <%=list.status%>  </td>
+                      <td> <%=link_to 'More Info', list_path(id: list.id)%> </td>
+                  </tr>
+                  <%end%>
+              </tr>
+          </tbody>
+      </table>
+    </div>
+  </div>
+</div>

@@ -20,6 +20,6 @@
   <%= f.input :notes%>
   <%= f.input :status%>
   <%= f.input :interest%>
-  <%= f.association :list%>
+  <%= f.association :list,label_method: :list_name %>
   <%= f.submit %>
 <% end %>
