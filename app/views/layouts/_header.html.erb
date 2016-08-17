@@ -13,9 +13,10 @@
 
       <ul class="nav navbar-nav navbar-right">
         <%if @current_user%>
-          <li><a href="/">Dashboard</a></li>
-          <li><a href="/lists">Lists</a></li>
-          <li><a href="/contacts">Contacts</a></li>
+          <li><%= link_to "Dashboard", dashboard_path %></li>
+          <li><%= link_to "Lists", lists_path %></li>
+          <li><%= link_to "Contacts", contacts_path %></li>
+          <li><%= link_to "Sign Out", sign_out_path%></li>
           <%else%>
           <li><a href="/sign_in">Sign In</a></li>
           <%end%>
