@@ -1,0 +1,25 @@
+<% if @contact.errors.any? %>
+    <% @contact.errors.full_messages.each do |error| %>
+    <p class="alert alert-danger">
+        <strong><%= error %></strong>
+    </p>
+    <% end %>
+<% end %>
+
+<%=simple_form_for @contact do |f|%>
+  <%= f.input :last_name%>
+  <%= f.input :first_name%>
+  <%= f.input :email%>
+  <%= f.input :phone%>
+  <%= f.input :company%>
+  <%= f.input :address1%>
+  <%= f.input :address2%>
+  <%= f.input :city%>
+  <%= f.input :state%>
+  <%= f.input :zip%>
+  <%= f.input :notes%>
+  <%= f.input :status%>
+  <%= f.input :interest%>
+  <%= f.association :list%>
+  <%= f.submit %>
+<% end %>

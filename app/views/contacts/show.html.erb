@@ -1,0 +1,39 @@
+<div class="outer-wrapper">
+  <div class="card">
+    <div class="container">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Contact ID</th>
+                    <th>Last Name</th>
+                    <th>First Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Company</th>
+                    <th>Notes</th>
+                    <th>Status</th>
+                    <th>Interest</th>
+                    <th>List ID</th>
+                    <th>Link</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td> <%=@contact.id%></td>
+                    <td> <%=@contact.last_name%>  </td>
+                    <td> <%=@contact.first_name%>  </td>
+                    <td> <%=@contact.email%>  </td>
+                    <td> <%=@contact.phone%>  </td>
+                    <td> <%=@contact.company%>  </td>
+                    <td> <%=@contact.notes%>  </td>
+                    <td> <%=@contact.status%>  </td>
+                    <td> <%=@contact.interest%>  </td>
+                    <td> <%=@contact.list_id%>  </td>
+                    <td> <%=link_to 'Edit Info', edit_contact_path(id: @contact.id)%> </td>
+                </tr>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+  </div>
+</div>
