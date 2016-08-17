@@ -1,0 +1,16 @@
+<% if @list.errors.any? %>
+    <% @list.errors.full_messages.each do |error| %>
+    <p class="alert alert-danger">
+        <strong><%= error %></strong>
+    </p>
+    <% end %>
+<% end %>
+
+<%=simple_form_for @list do |f|%>
+  <%= f.input :list_name %>
+  <%= f.input :description %>
+  <%= f.input :category %>
+  <%= f.input :status %>
+  <%= f.submit %>
+
+<% end %>
