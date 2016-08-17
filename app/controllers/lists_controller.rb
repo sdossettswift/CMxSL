@@ -6,12 +6,12 @@ class ListsController < ApplicationController
   end
 
   def new
-      @list = List.new
+      @lists = List.new
     end
 
     def create
-      @list=List.create(list_params)
-      if @list.save
+      @lists=List.create(list_params)
+      if @lists.save
         redirect_to dashboard_path, notice: "List Successfully Added"
       else
         render :new
@@ -23,16 +23,17 @@ class ListsController < ApplicationController
     end
 
     def show
-      @list = List.find_by id: params[:id]
+      @lists = List.find_by id: params[:id]
+      @contacts = @lists.contacts.all
     end
 
     def edit
-      @list = List.find_by id: params[:id]
+      @lists = List.find_by id: params[:id]
     end
 
     def update
-      @list = List.find_by id: params[:id]
-      if @list.update(list_params)
+      @lists = List.find_by id: params[:id]
+      if @lists.update(list_params)
         redirect_to dashboard_path, notice: "List Details Successfully Updated"
       else
         render :edit
@@ -40,8 +41,8 @@ class ListsController < ApplicationController
     end
 
     def delete
-        @list = List.find_by id: params[:id]
-        @list.destroy
+        @lists = List.find_by id: params[:id]
+        @lists.destroy
         redirect_to dashboard_path, notice: 'List Details Removed'
     end
 
