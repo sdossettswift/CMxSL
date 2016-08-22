@@ -1,0 +1,15 @@
+first_name,last_name,list_id,company,address1,city,state,zip,phone,email
+Jim,Enright,8,Charles R. Weber Company,"1001 McKinney, Suite 475",Houston,Tx,77002,713-357-2500,jre@crweber.com
+Michael,Skelly,8,Clean Line Energy,"1001 McKinney, 700",Houston,Tx,77002,832.319.6355 ,doquinn@cleanlineenergy.com
+Jim,Cogan,8,"Cogan & Partners, LLP","1001 McKinney, Suite 1600",Houston,Tx,77002,713.651.1881,nkuras@coganpartners.com
+Diane,Dundee,8,Kinetica Partners,"1001 McKinney, Suite 900",Houston,Tx,77002,713.228.3347,beverly.bahnsen@kineticallc.com
+Susan,Brouse,8,"Lonquist Field Service, LLC","1001 McKinney, Suite 1650",Houston,Tx,77002,713.559.9956,susan@lonquist.com
+Kyle,Ferachi,8,McGlinchey & Stafford,"1001 McKinney, Suite 1500",Houston,Tx,77002,,kferachi@mcglinchey.com
+Nancy,Romberg,8,McGlinchey & Stafford,"1001McKinney, Suite 1500",Houston,Tx,77002,713.520.1900,nromberg@mcglinchey.com
+Jim,Monroe,8,Monroe Vos Consulting Group,"1001 McKinney, Suite 1200",Houston,Tx,77002,713.227.0100,natasha.pismenyuk@monroevos.com
+Annette,Weber,8,Morton's The Steakhouse,"1001 McKinney, Suite 100",Houston,Tx,77002,713.659.3700,mrivera@ldry.com
+John,Schouest,8,SBSB,"1001 McKinney, Suite 300",Houston,Tx,77002,713-588-0446,llowrey@sbsblaw.com
+Sheila,Hudman,8,"Shannon, Martin","1001 McKinney, Suite 1100",Houston,Tx,77002,713.646.5541,shudman@smfadlaw.com
+Tony,Draper,8,Walker Wilcox Matousek,"1001 McKinney, Suite 2000",Houston,Tx,77002,713.654.8000,troosth@wwmlawyers.com
+Taine,Rockwell,8,Zilkha Biomass Energy,"1001 McKinney, Suite 1925",Houston,Tx,77002,713.979.9964,trockwell@zilkhabiomass.com
+Michael,Zilkha,8,Zilkha Biomass Energy,"1001 McKinney, Suite 1925",Houston,Tx,77002,,mzilkha@zilkhabiomass.com
