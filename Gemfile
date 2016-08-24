@@ -22,6 +22,7 @@ gem 'wkhtmltopdf-binary'
 gem 'gravtastic'
 gem 'rails-erd' #entity relationship diagrams
 gem 'rails_12factor' #for heroku
+gem 'will_paginate', '~> 3.0'
 
 
 group :test do
