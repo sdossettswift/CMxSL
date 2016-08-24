@@ -24,7 +24,7 @@ class ListsController < ApplicationController
 
     def show
       @lists = List.find_by id: params[:id]
-      @contacts = @lists.contacts.all
+      @contacts = @lists.contacts.paginate(page: params[:page], per_page: 20)
     end
 
     def edit

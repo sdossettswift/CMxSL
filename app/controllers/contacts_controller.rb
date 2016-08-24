@@ -19,7 +19,7 @@ class ContactsController < ApplicationController
     end
 
     def index
-      @contacts = Contact.all
+      @contacts = Contact.all.paginate(page: params[:page], per_page: 20)
     end
 
     def show
