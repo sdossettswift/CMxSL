@@ -1,6 +1,11 @@
 Rails.application.routes.draw do
 
+  CMxSL::Application.routes.draw do
+    resources :contacts, only: [:index]
+    resources :lists, only: [:index]
+    get 'dashboard' => 'dashboard#welcome', as: :dashboard
 
+  end
 
     resources :lists
     resources :contacts
@@ -9,7 +14,6 @@ Rails.application.routes.draw do
     resources :groups
 
 
-    get 'dashboard' => 'dashboard#welcome', as: :dashboard
 
     get 'sign_in' => 'sessions#new', as: :sign_in
     post 'sign_in' => 'sessions#create'

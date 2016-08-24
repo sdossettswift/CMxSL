@@ -6,7 +6,7 @@ class DashboardController < ApplicationController
   end
 
   def welcome
-    @contacts = Contact.all
-    @lists = List.all
+    @contacts = Contact.all.paginate(page: params[:page], per_page: 20)
+    @lists = List.all.paginate(page: params[:page], per_page: 10)
   end
 end
