@@ -7,6 +7,10 @@ class DashboardController < ApplicationController
 
   def welcome
     @contacts = Contact.all.paginate(page: params[:page], per_page: 20)
+
     @lists = List.all.paginate(page: params[:page], per_page: 10)
+
+    q = Contact.all
+    @q = q.search params[:query] if params[:query].present?
   end
 end
