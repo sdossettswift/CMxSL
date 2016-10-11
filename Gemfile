@@ -24,7 +24,8 @@ gem 'rails-erd' #entity relationship diagrams
 gem 'rails_12factor' #for heroku
 gem 'will_paginate', '~> 3.0'
 gem 'pg_search'
-
+gem 'figaro'
+gem 'http'
 
 group :test do
   gem 'minitest-rails-capybara'
@@ -33,7 +34,6 @@ end
 
 group :development, :test do
   gem 'byebug', platform: :mri
-  gem 'figaro'
 end
 
 group :development do

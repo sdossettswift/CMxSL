@@ -1,6 +1,24 @@
 Rails.application.routes.draw do
 
+
+  get 'meetup/new'
+
+  get 'meetup/edit'
+
+  get 'meetup/index'
+
+  get 'meetup/show'
+
   CMxSL::Application.routes.draw do
+  
+  get 'meetup/new'
+
+  get 'meetup/edit'
+
+  get 'meetup/index'
+
+  get 'meetup/show'
+
     resources :contacts, only: [:index]
     resources :lists, only: [:index]
     get 'dashboard' => 'dashboard#welcome', as: :dashboard
