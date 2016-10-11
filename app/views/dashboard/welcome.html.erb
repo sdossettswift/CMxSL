@@ -31,6 +31,13 @@
                   <%= link_to "Add List", new_list_path %>
                   <h3>Contacts</h3>
                   <%= link_to "Add Contact", new_contact_path %>
+
+                  <br>
+                  <h3>Export Contacts</h3>
+                  <p>
+                    <%= link_to "CSV", contacts_path(format: "csv") %> |
+                    <%= link_to "Excel", contacts_path(format: "xls") %>
+                  </p>
                 </div>
             </div>
 
