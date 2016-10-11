@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  sm_group_id: one
+  event_link: MyString
+  date: 2016-10-11
+  description: MyText
+  image_url: MyString
+
+two:
+  sm_group_id: two
+  event_link: MyString
+  date: 2016-10-11
+  description: MyText
+  image_url: MyString
