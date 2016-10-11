@@ -33,6 +33,11 @@
                   <%= link_to "Add Contact", new_contact_path %>
 
                   <br>
+                  <h3>Import Contacts</h3>
+                    <%= form_tag import_contacts_path, multipart: true do %>
+                      <%=file_field_tag :file %>
+                      <%=submit_tag "Import CSV" %>
+                    <%end %>
                   <h3>Export Contacts</h3>
                   <p>
                     <%= link_to "CSV", contacts_path(format: "csv") %> |

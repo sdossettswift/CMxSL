@@ -1,10 +1,16 @@
 class Contact < ApplicationRecord
+  require 'csv'
+
   include PgSearch
   belongs_to :list
   validates :email, presence: true, uniqueness: true
   multisearchable :against => [:list]
 
-
+def self.import(file)
+  CSV.foreach(file.path, headers: true) do |row|
+    Contact.create! row.to_hash
+  end
+end
 
 def self.to_csv(options = {})
   CSV.generate(options) do |csv|

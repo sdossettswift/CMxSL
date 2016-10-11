@@ -5,6 +5,11 @@ class ContactsController < ApplicationController
     end
   end
 
+  def import
+    Contact.import(params[:file])
+    redirect_to root_path, notice: "Data Imported!"
+  end
+
   def new
       @contact = Contact.new
     end
