@@ -18,7 +18,8 @@ module ApplicationHelper
   end
 
   def fetch_meetups_worth_going
-    json = open("https://api.meetup.com/2/events?member_id=100501792&offset=0&format=json&limited_events=False&photo-host=public&page=20&fields=&order=time&desc=false&status=upcoming&sig_id=100501792&sig=a16f1f16f21e97938877eb5d4bb2a1399739a0bb").read
+    json = open("https://api.meetup.com/2/events?member_id=214723522&offset=0&format=json&limited_events=False&photo-host=public&page=20&fields=&order=time&desc=false&status=upcoming&sig_id=214723522&sig=3a4b85b6198bbf0bf91af0e982e487fce878a93f
+").read
     JSON.parse(json, object_class: OpenStruct)["results"]
   end
 
