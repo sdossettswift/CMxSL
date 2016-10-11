@@ -33,6 +33,7 @@ end
 
 group :development, :test do
   gem 'byebug', platform: :mri
+  gem 'figaro'
 end
 
 group :development do
