@@ -1,0 +1,55 @@
+
+
+<?xml version="1.0"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+  xmlns:o="urn:schemas-microsoft-com:office:office"
+  xmlns:x="urn:schemas-microsoft-com:office:excel"
+  xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+  xmlns:html="http://www.w3.org/TR/REC-html40">
+  <Worksheet ss:Name="Sheet1">
+    <Table>
+      <Row>
+        <Cell><Data ss:Type="String">ID</Data></Cell>
+        <Cell><Data ss:Type="String">Last Name</Data></Cell>
+        <Cell><Data ss:Type="String">First Date</Data></Cell>
+        <Cell><Data ss:Type="String">Email</Data></Cell>
+        <Cell><Data ss:Type="String">Phone</Data></Cell>
+        <Cell><Data ss:Type="String">Company</Data></Cell>
+        <Cell><Data ss:Type="String">Address1</Data></Cell>
+        <Cell><Data ss:Type="String">Address2</Data></Cell>
+        <Cell><Data ss:Type="String">City</Data></Cell>
+        <Cell><Data ss:Type="String">State</Data></Cell>
+        <Cell><Data ss:Type="String">Zip</Data></Cell>
+        <Cell><Data ss:Type="String">Notes</Data></Cell>
+        <Cell><Data ss:Type="String">Status</Data></Cell>
+        <Cell><Data ss:Type="String">Interest</Data></Cell>
+        <Cell><Data ss:Type="String">List ID</Data></Cell>
+        <Cell><Data ss:Type="String">Created At</Data></Cell>
+        <Cell><Data ss:Type="String">Updated At</Data></Cell>
+        <Cell><Data ss:Type="String">Title</Data></Cell>
+      </Row>
+    <% @contacts.each do |contact| %>
+      <Row>
+        <Cell><Data ss:Type="Number"><%= contact.id %></Data></Cell>
+        <Cell><Data ss:Type="String"><%= contact.last_name %></Data></Cell>
+        <Cell><Data ss:Type="String"><%= contact.first_name %></Data></Cell>
+        <Cell><Data ss:Type="Number"><%= contact.email %></Data></Cell>
+        <Cell><Data ss:Type="Number"><%= contact.phone %></Data></Cell>
+        <Cell><Data ss:Type="Number"><%= contact.company %></Data></Cell>
+        <Cell><Data ss:Type="Number"><%= contact.address1 %></Data></Cell>
+        <Cell><Data ss:Type="Number"><%= contact.address2 %></Data></Cell>
+        <Cell><Data ss:Type="Number"><%= contact.city %></Data></Cell>
+        <Cell><Data ss:Type="Number"><%= contact.state %></Data></Cell>
+        <Cell><Data ss:Type="Number"><%= contact.zip %></Data></Cell>
+        <Cell><Data ss:Type="Number"><%= contact.notes %></Data></Cell>
+        <Cell><Data ss:Type="Number"><%= contact.status %></Data></Cell>
+        <Cell><Data ss:Type="Number"><%= contact.interest %></Data></Cell>
+        <Cell><Data ss:Type="Number"><%= contact.list_id %></Data></Cell>
+        <Cell><Data ss:Type="Number"><%= contact.created_at %></Data></Cell>
+        <Cell><Data ss:Type="Number"><%= contact.updated_at%></Data></Cell>
+        <Cell><Data ss:Type="Number"><%= contact.title %></Data></Cell>
+      </Row>
+    <% end %>
+    </Table>
+  </Worksheet>
+</Workbook>

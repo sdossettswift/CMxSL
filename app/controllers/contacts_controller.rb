@@ -22,6 +22,13 @@ class ContactsController < ApplicationController
       q = Contact.all
       q = q.search params[:query] if params[:query].present?
       @contacts = q.paginate(page: params[:page], per_page: 20)
+
+      @contacts_for_CSV = Contact.order(:last_name)
+        respond_to do |format|
+         format.html
+         format.xls  { send_data @contacts_for_CSV.to_csv(col_sep: "\t") }
+         format.csv { send_data @contacts_for_CSV.to_csv }
+       end
     end
 
     def show
