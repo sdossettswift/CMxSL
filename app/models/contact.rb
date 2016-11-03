@@ -8,9 +8,12 @@ class Contact < ApplicationRecord
 
 def self.import(file)
   CSV.foreach(file.path, headers: true) do |row|
-    Contact.create! row.to_hash
+    entry = find_by(email: row["email"]) || new
+     entry.update row.to_hash
+     entry.save!
   end
 end
+
 
 def self.to_csv(options = {})
   CSV.generate(options) do |csv|
