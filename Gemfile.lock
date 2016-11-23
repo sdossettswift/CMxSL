@@ -126,6 +126,7 @@ GEM
       minitest-metadata (~> 0.6)
       minitest-rails (~> 3.0)
     multi_json (1.12.1)
+    newrelic_rpm (3.17.1.326)
     nio4r (1.2.1)
     nokogiri (1.6.8)
       mini_portile2 (~> 2.1.0)
@@ -245,6 +246,7 @@ DEPENDENCIES
   materialize-sass
   minitest-rails
   minitest-rails-capybara
+  newrelic_rpm
   pg (~> 0.18)
   pg_search
   puma (~> 3.0)

@@ -26,6 +26,7 @@ gem 'will_paginate', '~> 3.0'
 gem 'pg_search'
 gem 'figaro'
 gem 'http'
+gem 'newrelic_rpm'
 
 group :test do
   gem 'minitest-rails-capybara'
